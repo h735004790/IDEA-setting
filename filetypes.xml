@@ -2,24 +2,12 @@
   <component name="FileTypeManager" version="17">
     <ignoreFiles list="*.hprof;*.iml;*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.gitignore;.hg;.idea;.svn;CVS;__pycache__;_svn;vssver.scc;vssver2.scc;" />
     <extensionMap>
-      <removed_mapping pattern=".eslintignore" type="ESLint file" />
-      <removed_mapping pattern=".jshintignore" type="JSHint file" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
-      <removed_mapping pattern=".npmignore" type="Npm file" />
-      <mapping pattern=".stylelintignore" type="PLAIN_TEXT" />
-      <mapping pattern=".jshintignore" type="PLAIN_TEXT" />
       <mapping pattern="bo" type="PLAIN_TEXT" />
-      <mapping pattern=".npmignore" type="PLAIN_TEXT" />
-      <mapping pattern=".eslintignore" type="PLAIN_TEXT" />
       <mapping ext="emmx" type="PLAIN_TEXT" />
       <mapping ext="data" type="PLAIN_TEXT" />
       <mapping ext="jks" type="PLAIN_TEXT" />
-      <removed_mapping pattern=".stylelintignore" type="StyleLint file" />
-      <removed_mapping pattern=".stylelintignore" type="StyleLint file" />
-      <removed_mapping pattern=".eslintignore" type="ESLint file" />
-      <removed_mapping pattern=".jshintignore" type="JSHint file" />
-      <removed_mapping pattern=".npmignore" type="Npm file" />
     </extensionMap>
   </component>
 </application>
