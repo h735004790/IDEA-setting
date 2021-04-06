@@ -640,7 +640,7 @@
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="datetime" />
-                    <option name="javaType" value="java.util.Date" />
+                    <option name="javaType" value="java.time.LocalDateTime" />
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="timestamp" />
@@ -673,6 +673,10 @@
                   <TypeMapper>
                     <option name="columnType" value="tinyint(\(\d+)\)? unsigned" />
                     <option name="javaType" value="java.lang.Integer" />
+                  </TypeMapper>
+                  <TypeMapper>
+                    <option name="columnType" value="date" />
+                    <option name="javaType" value="java.time.LocalDate" />
                   </TypeMapper>
                 </list>
               </option>
