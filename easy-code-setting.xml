@@ -667,7 +667,7 @@
                     <option name="javaType" value="java.lang.String" />
                   </TypeMapper>
                   <TypeMapper>
-                    <option name="columnType" value="tinyint(\(\d+)\)?" />
+                    <option name="columnType" value="tinyint(\(\d+)\)? unsigned" />
                     <option name="javaType" value="java.lang.Integer" />
                   </TypeMapper>
                   <TypeMapper>
@@ -685,6 +685,10 @@
                   <TypeMapper>
                     <option name="columnType" value="date" />
                     <option name="javaType" value="java.time.LocalDate" />
+                  </TypeMapper>
+                  <TypeMapper>
+                    <option name="columnType" value="tinyint(\(\d+)\)? unsigned zerofill" />
+                    <option name="javaType" value="java.lang.Object" />
                   </TypeMapper>
                 </list>
               </option>
