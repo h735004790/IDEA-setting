@@ -1061,7 +1061,7 @@
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="timestamp" />
-                    <option name="javaType" value="java.util.Date" />
+                    <option name="javaType" value="java.time.LocalDateTime" />
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="boolean" />
