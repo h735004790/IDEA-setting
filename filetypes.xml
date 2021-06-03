@@ -8,6 +8,7 @@
       <mapping pattern="bo" type="PLAIN_TEXT" />
       <mapping ext="emmx" type="PLAIN_TEXT" />
       <mapping ext="data" type="PLAIN_TEXT" />
+      <mapping ext="bat" type="PLAIN_TEXT" />
       <mapping ext="keystore" type="PLAIN_TEXT" />
       <mapping ext="lst" type="PLAIN_TEXT" />
       <mapping ext="jks" type="PLAIN_TEXT" />
