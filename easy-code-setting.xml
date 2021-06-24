@@ -168,7 +168,7 @@
                     <option name="name" value="pageResultUtil.java" />
                   </Template>
                   <Template>
-                    <option name="code" value="$!init&#10;$!define&#10;#set($packageName = $tableInfo.savePackageName.replace(&quot;.&quot;,&quot;/&quot;))&#10;##设置保存名称与保存位置&#10;$!callback.setFileName(&quot;application1.yml&quot;)&#10;$!callback.setSavePath($tool.append($modulePath, &quot;/src/main/resources&quot;))&#10;server:&#10;  port: 8000&#10;spring:&#10;  messages:&#10;    basename: $!{packageName}/errors&#10;    encoding: UTF-8" />
+                    <option name="code" value="$!init&#10;$!define&#10;#set($packageName = $tableInfo.savePackageName.replace(&quot;.&quot;,&quot;/&quot;))&#10;##设置保存名称与保存位置&#10;$!callback.setFileName(&quot;application1.yml&quot;)&#10;$!callback.setSavePath($tool.append($modulePath, &quot;/src/main/resources&quot;))&#10;server:&#10;  port: 8000&#10;spring:&#10;  messages:&#10;    basename: $!{packageName}/exception/errors&#10;    encoding: UTF-8" />
                     <option name="name" value="application.yml" />
                   </Template>
                   <Template>
@@ -178,6 +178,14 @@
                   <Template>
                     <option name="code" value="##引入宏定义&#10;$!define&#10;##设置回调&#10;$!callback.setFileName(&quot;ApplicationException.java&quot;)&#10;$!callback.setSavePath($tool.append($tableInfo.savePath, &quot;/common/exception&quot;))&#10;##使用宏定义设置包后缀&#10;#setPackageSuffix(&quot;common.exception&quot;)&#10;&#10;#classComment(&quot;异常基类&quot;)&#10;public class ApplicationException extends RuntimeException {&#10;&#10;    private static final long serialVersionUID = 1L;&#10;    private final String errorCode;&#10;    private final transient Object[] errorArguments;&#10;&#10;    public ApplicationException(String errorCode, String message) {&#10;        this(errorCode, message, (Throwable)null, (Object[])null);&#10;    }&#10;&#10;    public ApplicationException(String errorCode, Object[] errorArguments) {&#10;        this(errorCode, &quot;error with code: &quot; + errorCode, errorArguments);&#10;    }&#10;&#10;    public ApplicationException(String errorCode, Throwable cause) {&#10;        this(errorCode, (Throwable)cause, (Object[])null);&#10;    }&#10;&#10;    public ApplicationException(String errorCode, Throwable cause, Object[] errorArguments) {&#10;        this(errorCode, cause.getMessage(), cause, errorArguments);&#10;    }&#10;&#10;    public ApplicationException(String errorCode, String message, Object[] errorArguments) {&#10;        this(errorCode, message, (Throwable)null, errorArguments);&#10;    }&#10;&#10;    public ApplicationException(String errorCode, String message, Throwable cause) {&#10;        this(errorCode, message, cause, (Object[])null);&#10;    }&#10;&#10;    public ApplicationException(String errorCode, String message, Throwable cause, Object[] errorArguments) {&#10;        super(message, cause);&#10;        this.errorCode = errorCode;&#10;        this.errorArguments = errorArguments;&#10;    }&#10;&#10;    public String getErrorCode() {&#10;        return this.errorCode;&#10;    }&#10;&#10;    public Object[] getErrorArguments() {&#10;        return this.errorArguments;&#10;    }&#10;}" />
                     <option name="name" value="applicationException.java" />
+                  </Template>
+                  <Template>
+                    <option name="code" value="$!init&#10;$!define&#10;##设置保存名称与保存位置&#10;$!callback.setFileName(&quot;errors_en_US.properties&quot;)&#10;$!callback.setSavePath($tool.append($modulePath, &quot;/src/main/resources&quot;))" />
+                    <option name="name" value="errors_en_US.properties" />
+                  </Template>
+                  <Template>
+                    <option name="code" value="$!init&#10;$!define&#10;#set($packageName = $tableInfo.savePackageName.replace(&quot;.&quot;,&quot;/&quot;))&#10;##设置保存名称与保存位置&#10;$!callback.setFileName(&quot;application1.yml&quot;)&#10;$!callback.setSavePath($tool.append($modulePath, &quot;/src/main/resources&quot;))" />
+                    <option name="name" value="errors_zh_CN.properties" />
                   </Template>
                 </list>
               </option>
